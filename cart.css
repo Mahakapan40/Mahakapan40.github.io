@@ -1,0 +1,124 @@
+/* Global styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Navigation */
+header {
+    background: #111;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 1.8em;
+    color: #0f0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #0f0;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Cart Section */
+main {
+    padding: 20px;
+    margin-top: 70px; /* Adjust margin to prevent overlap with header */
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px); /* Full viewport height minus header height */
+}
+
+.cart {
+    background: #333;
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%; /* Make it responsive */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.cart h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.cart-summary a.btn-checkout {
+    background: #0f0;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.cart-summary a.btn-checkout:hover {
+    background: #0c0;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #0f0;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+}
